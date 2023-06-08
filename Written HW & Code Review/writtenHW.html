@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 Written HW</title>
+</head>
+<body>
+    <ol>
+        <li>1. Explain what a REST API is. What makes an API "RESTful"?</li>
+        <li>REST stands for Representational State Transfer. It is an architecture style for web-based APIs. Also known as a runtime environment. It works by storing representations of a code on the server that the browser can access via HTTP methods.</li>
+        <li>2. What is Node.js and why is it often used when building server-side applications?</li>
+        <li>Node lets us run JavaScript outside of the browser environment. It is lightweight module and doesn’t have a DOM or web APIs. It is updated and expanded upon via packages that are shared via open-source devs online.</li>
+        <li>3. Express.js is a popular framework used in conjunction with Node.js. What are some of the key features of Express.js that make it useful for building web servers?</li>
+        <li>Express is minimalistic and lightweight compared to other popular frameworks. It also works with Node’s built-in HTTP module making it seamless integration for Node-based apps.</li>
+        <li>4. In Express.js, what is middleware and how is it used?</li>
+        <li>Middleware is programs that facilitate communication and interaction between applications and the system software or between a client and server. In our express example, we use its JSON parser which allows our machine to read JSON files accurately.</li>
+        <li>5. Regarding HTTP verbs, what is the difference between GET, POST, PUT, PATCH, and DELETE? When would you use each in the context of a RESTful API?</li>
+        <li>While they all have different purposes, GET retrieves data from the server and renders it in the browser. POST allows us to input data in the browser and have it stored in the server based on the rules the route set up for us. PUT is similar to POST except it works for updating already stored info. PUT requires a full update of all the info while PATCH allows us to do a partial update. And DELETE do what you think it do.</li>
+        <li>6. How would you handle parameters in the URL with Express.js? Provide an example.</li>
+        <li>In the code, you would provide the method and then place the URL extension as the first Param. If the URL is fluid or changing then you include a colon to indicate that :. Ex:
+            app.get"(‘/:randomfluidurl’ (req, res) => {}""</li>
+        <li>7. How can you handle error situations when building an Express.js API?</li>
+        <li>You add a comprehensive error-handling system. We add test routes via JEST and SUPERTEST which create test routes that we as the developers can control.</li>
+        <li>8. When building a RESTful API with Express.js, how would you structure your routes for a resource like items? What would the endpoints look like for performing CRUD (Create, Read, Update, Delete) operations?</li>
+        <li>We would create routes using the INDUCES methods which will allow us to access the resource from the server. We would also have to make a schema for the Items resource in order to know the rules for update or adding new data to it.</li>
+        <li>9. How would you parse incoming request bodies in Express.js? Provide an example of how you might handle a JSON payload.</li>
+        <li>We can use one the packages that is built into Node, for example we can use fs in express to parse JSON</li>
+        <li>10. How can testing be implemented for a RESTful API built with Node and Express? Provide an example of a test case for one of your API endpoints.</li>
+        <li>We would use JEST and SUPERTEST in order to create test routes with data that we feed as the developer and check to see that the same data is returned.</li>
+    </ol>
+    
+</body>
+</html>

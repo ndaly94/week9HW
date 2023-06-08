@@ -1,0 +1,22 @@
+Brick Breaker Code Review:
+
+I wanted to start off by saying that this looks incredible! Could easily be released to the public. 
+
+The reason I picked this code is because I’m jealous so I want to learn from what you did and see if there is anything I may want to adopt in the future. 
+The commenting is incredibly clear and concise making it easy for me to digest this. I especially like your inclusion of the slider functionality in the JS. 
+
+The coloring of the bricks on the white page background is what makes this project stand out aesthetically. The coloring of the bricks themselves is done within JavaScript. This is accomplished when setting the variable brickLayout. When the game is initially rendered after the Modal that prompts the user to start the game begins. Additionally, it is triggered to regenerate the bricks and their color scheme if the user chooses to play again.
+
+This code is also very heavy given the context of the project (1st project for beginners) and it is impressive how organized all of the functions remain. The init() function and resetScreen() function call back all necessary pieces of the JS to keep the game running smoothly. 
+
+Additionally, I also used Canvas on my project but Hailey has taken it to the next level! She uses it to create a dynamic game board whose dimensions of each piece change based on the difficulty settings which the user gets to pick from in a nifty dropdown menu. The multiple changes to the game via JS (paddle size and speed, ball size and speed all change) in difficulty provides a nuanced experience in comparison to changing only one aspect of the game when increasing the difficulty. 
+
+Hailey also uses Modals to great effect, one for the start of the game and one for when the game is over. They are clearly labeled in the HTML and also have their own JS logic and CSS styling. 
+
+One small flaw I found when playing the game is that sometimes I can get the paddle on top of the ball at the last second before it hits the bottom of the screen ending the game. When this happens sometimes the ball will float through the paddle and back into play extending the players turn when it should have been a loss. This happens most on easy as that is when the paddle and ball are largest in size.
+
+I also really appreciate that the resources used are clearly linked and labeled at the end of the code. 
+
+Based on my understanding of JS best practices this code is very efficient and has been optimized while still creating a complex and incredibly visually stimulating game for us all to enjoy!
+
+
